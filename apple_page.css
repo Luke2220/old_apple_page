@@ -1,7 +1,15 @@
+body{
+    margin:0;
+}
+
 .center-nav
 {
     margin:auto;
-    max-width:60%;
+    max-width:75%;
+    position:absolute;
+    top:10%;
+    right:25%;
+    left:25%;
 }
 
 nav {
@@ -10,13 +18,11 @@ nav {
     padding:0;
     margin:0;
     display:grid;
-    grid-template-columns: repeat(8, 1fr) 2fr;
+    grid-template-columns: repeat(8, 1fr) 1.5fr;
     justify-items: stretch;
     justify-content: center;
    
 }
-
-
 
 nav button:first-child{
     border-top-left-radius: 4px;
@@ -41,4 +47,58 @@ nav button{
 
 nav button:hover{
     background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(to bottom, rgba(117, 117, 117, 0.61) 50%, rgba(121, 121, 121, 0.25) 50%), linear-gradient(to bottom, rgb(219, 219, 219), rgb(66, 66, 66));
+}
+
+.body-grid {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.body-grid img{
+    max-width:360px;
+}
+
+.hero{
+    grid-column:1 / -1;
+    background:url('https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') 50% 100% no-repeat;
+    width:1440px;
+    height:950px;
+}
+
+.hero div{
+    position: absolute;
+    top:35%;
+    right:25%;
+    left:25%;
+    text-align: center;
+    color:azure;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.hero header{
+    font-size: 55px;
+}
+.hero p{
+    font-size: 35px;
+    margin:5px 0;
+}
+
+.hero a{
+    color:azure;
+    font-size: 25px;
+    text-decoration: none;
+}
+.hero a:hover{
+    text-decoration:underline;
+}
+
+.hero div img{
+    max-width:40px;
+    max-height:40px;
+    margin-bottom:-12px;
 }
