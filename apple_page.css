@@ -2,6 +2,14 @@ body{
     margin:0;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
 .center-nav
 {
     margin:auto;
@@ -91,14 +99,50 @@ nav button:hover{
 .hero a{
     color:azure;
     font-size: 25px;
-    text-decoration: none;
-}
-.hero a:hover{
-    text-decoration:underline;
+   
 }
 
 .hero div img{
     max-width:40px;
     max-height:40px;
     margin-bottom:-12px;
+}
+
+.footer{
+    margin:10px auto;
+ grid-column: 1 / -1;
+ align-self:end;
+}
+
+footer{
+    font-size:x-small;
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    max-width:1100px;
+}
+
+footer img{
+    max-width:20px;
+    max-height:20px;
+    margin-bottom: -6px;
+}
+
+footer ul{
+    float:right;
+    flex:2 1 auto;
+}
+
+footer p{
+    flex:1 1 auto;
+}
+
+footer li{
+    display:inline;
+    border-right:grey solid 1px;
+    padding:0 3px;
+}
+footer li:last-child{
+    border-right: none;
 }
